@@ -71,10 +71,10 @@
                                 @endcan
 
                                 @can('option_delete')
-                                    <form action="{{ route('admin.options.destroy', $option->id) }}" method="POST" onsubmit="return confirm('{{ trans('global.areYouSure') }}');" style="display: inline-block;">
+                                    <form action="{{ route('admin.options.destroy', $option->id) }}" method="POST" id="delete" style="display: inline-block;">
                                         <input type="hidden" name="_method" value="DELETE">
                                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                                        <input type="submit" class="btn btn-xs btn-danger" value="{{ trans('global.delete') }}">
+                                        <input type="submit" id="delete" class="btn btn-xs btn-danger" value="{{ trans('global.delete') }}">
                                     </form>
                                 @endcan
 
@@ -92,6 +92,43 @@
 
 @endsection
 @section('scripts')
+    <script>
+        $('#delete').on('click',function(e) {
+
+            e.preventDefault();
+            var form = this;
+
+            Swal.fire({
+                title: 'Are you sure?',
+                text: "You won't be able to revert this!",
+                icon: 'warning',
+
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes, delete it!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+
+
+
+                    Swal.fire(
+                        'Deleted!',
+                        'Your data has been deleted.',
+                        'success'
+                    ).then((result)=>{
+                        form.submit();
+                    });
+
+
+
+                }
+
+            })
+
+
+        });
+    </script>
 @parent
 <script>
     $(function () {

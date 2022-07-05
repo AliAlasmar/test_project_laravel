@@ -1,6 +1,10 @@
 @extends('layouts.admin')
 @section('content')
 @can('category_create')
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <div style="margin-bottom: 10px;" class="row">
         <div class="col-lg-12">
             <a class="btn btn-success" href="{{ route("admin.categories.create") }}">
@@ -59,10 +63,10 @@
                                 @endcan
 
                                 @can('category_delete')
-                                    <form action="{{ route('admin.categories.destroy', $category->id) }}" method="POST" onsubmit="return confirm('{{ trans('global.areYouSure') }}');" style="display: inline-block;">
+                                    <form action="{{ route('admin.categories.destroy', $category->id) }}" method="POST" id="delete" style="display: inline-block;">
                                         <input type="hidden" name="_method" value="DELETE">
                                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                                        <input type="submit" class="btn btn-xs btn-danger" value="{{ trans('global.delete') }}">
+                                        <input type="submit" id="delete" class="btn btn-xs btn-danger" value="{{ trans('global.delete') }}">
                                     </form>
                                 @endcan
 
@@ -77,10 +81,56 @@
 </div>
 
 
+<form method="POST" id="delete">
+    <input type="hidden" name="amccode" id="delete" value="<?php   ?>">
+    <button class="btn btn-danger" id="delete"  onclick="fun()" name="delete" type="submit">
+        <i class="fa fa-minus"></i>
+        Delete
+    </button>
+</form>
+
 
 @endsection
 @section('scripts')
-@parent
+   <script>
+        $('#delete').on('click',function(e) {
+
+            e.preventDefault();
+            var form = this;
+
+            Swal.fire({
+                title: 'Are you sure?',
+                text: "You won't be able to revert this!",
+                icon: 'warning',
+
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes, delete it!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+
+
+
+                    Swal.fire(
+                        'Deleted!',
+                        'Your data has been deleted.',
+                        'success'
+                    ).then((result)=>{
+                        form.submit();
+                    });
+
+
+
+                }
+
+            })
+
+
+        });
+    </script>
+    @parent
+
 <script>
     $(function () {
   let dtButtons = $.extend(true, [], $.fn.dataTable.defaults.buttons)

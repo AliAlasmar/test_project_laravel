@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 05, 2022 at 07:39 PM
--- Server version: 10.1.35-MariaDB
+-- Generation Time: 06 يوليو 2022 الساعة 11:39
+-- إصدار الخادم: 10.1.35-MariaDB
 -- PHP Version: 7.2.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -19,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `laravel`
+-- Database: `test_pro`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `categories`
+-- بنية الجدول `categories`
 --
 
 CREATE TABLE `categories` (
@@ -37,51 +37,19 @@ CREATE TABLE `categories` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `categories`
+-- إرجاع أو استيراد بيانات الجدول `categories`
 --
 
 INSERT INTO `categories` (`id`, `name`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 'Qui eaque necessitatibus.', NULL, '2022-07-04 09:04:04', '2022-07-04 09:04:04'),
-(2, 'Esse labore necessitatibus.', NULL, '2022-07-04 09:04:04', '2022-07-04 09:04:04'),
-(3, 'A voluptatem ipsum porro.', NULL, '2022-07-04 09:04:04', '2022-07-04 09:04:04'),
-(4, 'Tenetur sed laborum qui.', NULL, '2022-07-04 09:04:04', '2022-07-04 09:04:04'),
-(5, 'Maxime culpa qui quaerat enim.', NULL, '2022-07-04 09:04:04', '2022-07-04 09:04:04'),
 (6, 'برمجة', '2022-07-04 09:04:17', '2022-07-05 02:45:56', '2022-07-05 02:45:56'),
 (7, 'برمجة', '2022-07-05 02:46:25', '2022-07-05 02:48:21', '2022-07-05 02:48:21'),
-(8, 'فثسف', '2022-07-05 02:48:33', '2022-07-05 02:49:47', '2022-07-05 02:49:47'),
-(9, 'test', '2022-07-05 02:51:55', '2022-07-05 02:51:57', '2022-07-05 02:51:57'),
-(10, 'test', '2022-07-05 02:55:13', '2022-07-05 02:55:18', '2022-07-05 02:55:18'),
-(11, 'test', '2022-07-05 02:55:29', '2022-07-05 02:55:40', '2022-07-05 02:55:40'),
-(12, 'Ali Alasmar', '2022-07-05 02:55:57', '2022-07-05 02:56:03', '2022-07-05 02:56:03'),
-(13, 'test', '2022-07-05 02:58:41', '2022-07-05 03:01:13', '2022-07-05 03:01:13'),
-(14, 'Ali Alasmar', '2022-07-05 03:01:19', '2022-07-05 03:01:23', '2022-07-05 03:01:23'),
-(15, 'test', '2022-07-05 03:01:57', '2022-07-05 03:02:02', '2022-07-05 03:02:02'),
-(16, 'test', '2022-07-05 03:02:21', '2022-07-05 03:02:30', '2022-07-05 03:02:30'),
-(17, 'test', '2022-07-05 03:03:25', '2022-07-05 03:03:33', '2022-07-05 03:03:33'),
-(18, 'Ali Alasmar', '2022-07-05 03:05:58', '2022-07-05 03:07:06', '2022-07-05 03:07:06'),
-(19, 'Ali Alasmar', '2022-07-05 03:09:53', '2022-07-05 03:09:57', '2022-07-05 03:09:57'),
-(20, 'test', '2022-07-05 03:10:20', '2022-07-05 03:10:30', '2022-07-05 03:10:30'),
-(21, 'test', '2022-07-05 03:10:20', '2022-07-05 03:10:23', '2022-07-05 03:10:23'),
-(22, 'test', '2022-07-05 03:12:20', '2022-07-05 03:12:32', '2022-07-05 03:12:32'),
-(23, 'test', '2022-07-05 03:12:20', '2022-07-05 03:12:27', '2022-07-05 03:12:27'),
-(24, 'test', '2022-07-05 03:12:40', '2022-07-05 03:12:45', '2022-07-05 03:12:45'),
-(25, 'Ali Alasmar', '2022-07-05 03:48:11', '2022-07-05 03:48:17', '2022-07-05 03:48:17'),
-(26, 'test', '2022-07-05 03:50:28', '2022-07-05 03:54:09', '2022-07-05 03:54:09'),
-(27, 'test', '2022-07-05 03:54:38', '2022-07-05 03:54:43', '2022-07-05 03:54:43'),
 (28, 'برمجة', '2022-07-05 03:55:18', '2022-07-05 08:06:44', '2022-07-05 08:06:44'),
-(29, 'test', '2022-07-05 08:04:53', '2022-07-05 08:04:56', '2022-07-05 08:04:56'),
-(30, 'test', '2022-07-05 08:05:49', '2022-07-05 08:05:51', '2022-07-05 08:05:51'),
-(31, 'test', '2022-07-05 08:05:57', '2022-07-05 08:06:01', '2022-07-05 08:06:01'),
-(32, 'test', '2022-07-05 08:06:25', '2022-07-05 08:06:27', '2022-07-05 08:06:27'),
-(33, 'test', '2022-07-05 08:06:40', '2022-07-05 08:06:51', '2022-07-05 08:06:51'),
-(34, 'test', '2022-07-05 08:07:27', '2022-07-05 08:07:32', '2022-07-05 08:07:32'),
-(35, 'برمجة', '2022-07-05 08:27:23', '2022-07-05 08:27:23', NULL),
-(36, 'test', '2022-07-05 14:22:28', '2022-07-05 14:22:31', '2022-07-05 14:22:31');
+(35, 'برمجة', '2022-07-05 08:27:23', '2022-07-05 08:27:23', NULL);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `migrations`
+-- بنية الجدول `migrations`
 --
 
 CREATE TABLE `migrations` (
@@ -91,7 +59,7 @@ CREATE TABLE `migrations` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `migrations`
+-- إرجاع أو استيراد بيانات الجدول `migrations`
 --
 
 INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
@@ -118,7 +86,7 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oauth_access_tokens`
+-- بنية الجدول `oauth_access_tokens`
 --
 
 CREATE TABLE `oauth_access_tokens` (
@@ -136,7 +104,7 @@ CREATE TABLE `oauth_access_tokens` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oauth_auth_codes`
+-- بنية الجدول `oauth_auth_codes`
 --
 
 CREATE TABLE `oauth_auth_codes` (
@@ -151,7 +119,7 @@ CREATE TABLE `oauth_auth_codes` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oauth_clients`
+-- بنية الجدول `oauth_clients`
 --
 
 CREATE TABLE `oauth_clients` (
@@ -170,7 +138,7 @@ CREATE TABLE `oauth_clients` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oauth_personal_access_clients`
+-- بنية الجدول `oauth_personal_access_clients`
 --
 
 CREATE TABLE `oauth_personal_access_clients` (
@@ -183,7 +151,7 @@ CREATE TABLE `oauth_personal_access_clients` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oauth_refresh_tokens`
+-- بنية الجدول `oauth_refresh_tokens`
 --
 
 CREATE TABLE `oauth_refresh_tokens` (
@@ -196,7 +164,7 @@ CREATE TABLE `oauth_refresh_tokens` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `options`
+-- بنية الجدول `options`
 --
 
 CREATE TABLE `options` (
@@ -210,70 +178,13 @@ CREATE TABLE `options` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `options`
+-- إرجاع أو استيراد بيانات الجدول `options`
 --
 
 INSERT INTO `options` (`id`, `option_text`, `points`, `created_at`, `updated_at`, `deleted_at`, `question_id`) VALUES
-(1, 'dignissimos', 1, '2022-07-04 07:34:58', '2022-07-04 09:03:15', '2022-07-04 09:03:15', 1),
-(2, 'facere', 0, '2022-07-04 07:34:58', '2022-07-04 09:03:15', '2022-07-04 09:03:15', 1),
-(3, 'nobis', 0, '2022-07-04 07:34:58', '2022-07-04 09:03:15', '2022-07-04 09:03:15', 1),
-(4, 'deserunt', 0, '2022-07-04 07:34:59', '2022-07-04 09:03:15', '2022-07-04 09:03:15', 1),
-(5, 'vel', 0, '2022-07-04 07:34:59', '2022-07-04 09:03:15', '2022-07-04 09:03:15', 2),
-(6, 'eligendi', 0, '2022-07-04 07:34:59', '2022-07-04 09:03:15', '2022-07-04 09:03:15', 2),
-(7, 'unde', 0, '2022-07-04 07:34:59', '2022-07-04 09:03:39', '2022-07-04 09:03:39', 2),
-(8, 'et', 1, '2022-07-04 07:34:59', '2022-07-04 09:03:15', '2022-07-04 09:03:15', 2),
-(9, 'consequatur', 0, '2022-07-04 07:34:59', '2022-07-04 09:03:39', '2022-07-04 09:03:39', 3),
-(10, 'quae', 1, '2022-07-04 07:34:59', '2022-07-04 09:03:39', '2022-07-04 09:03:39', 3),
-(11, 'quas', 0, '2022-07-04 07:34:59', '2022-07-04 09:03:39', '2022-07-04 09:03:39', 3),
-(12, 'sint', 0, '2022-07-04 07:34:59', '2022-07-04 09:03:39', '2022-07-04 09:03:39', 3),
-(13, 'omnis', 0, '2022-07-04 07:34:59', '2022-07-04 09:03:39', '2022-07-04 09:03:39', 4),
-(14, 'aut', 0, '2022-07-04 07:34:59', '2022-07-04 09:03:39', '2022-07-04 09:03:39', 4),
-(15, 'molestiae', 1, '2022-07-04 07:35:00', '2022-07-04 09:03:15', '2022-07-04 09:03:15', 4),
-(16, 'odit', 0, '2022-07-04 07:35:00', '2022-07-04 09:03:39', '2022-07-04 09:03:39', 4),
-(17, 'dolor', 0, '2022-07-04 07:35:00', '2022-07-04 09:03:39', '2022-07-04 09:03:39', 5),
-(18, 'impedit', 0, '2022-07-04 07:35:00', '2022-07-04 09:03:39', '2022-07-04 09:03:39', 5),
-(19, 'ad', 0, '2022-07-04 07:35:00', '2022-07-04 09:03:39', '2022-07-04 09:03:39', 5),
-(20, 'repellendus', 1, '2022-07-04 07:35:00', '2022-07-04 09:03:39', '2022-07-04 09:03:39', 5),
-(21, 'mollitia', 0, '2022-07-04 07:35:00', '2022-07-04 09:03:28', '2022-07-04 09:03:28', 6),
-(22, 'quidem', 1, '2022-07-04 07:35:00', '2022-07-04 09:03:28', '2022-07-04 09:03:28', 6),
-(23, 'aliquam', 0, '2022-07-04 07:35:00', '2022-07-04 09:03:39', '2022-07-04 09:03:39', 6),
-(24, 'numquam', 0, '2022-07-04 07:35:00', '2022-07-04 09:03:15', '2022-07-04 09:03:15', 6),
-(25, 'ut', 0, '2022-07-04 07:35:00', '2022-07-04 09:03:15', '2022-07-04 09:03:15', 7),
-(26, 'neque', 0, '2022-07-04 07:35:01', '2022-07-04 09:03:28', '2022-07-04 09:03:28', 7),
-(27, 'ea', 1, '2022-07-04 07:35:01', '2022-07-04 09:03:28', '2022-07-04 09:03:28', 7),
-(28, 'qui', 0, '2022-07-04 07:35:01', '2022-07-04 09:03:28', '2022-07-04 09:03:28', 7),
-(29, 'fuga', 0, '2022-07-04 07:35:01', '2022-07-04 09:03:15', '2022-07-04 09:03:15', 8),
-(30, 'natus', 0, '2022-07-04 07:35:01', '2022-07-04 09:03:15', '2022-07-04 09:03:15', 8),
-(31, 'quam', 1, '2022-07-04 07:35:01', '2022-07-04 09:03:15', '2022-07-04 09:03:15', 8),
-(32, 'corporis', 0, '2022-07-04 07:35:01', '2022-07-04 09:03:15', '2022-07-04 09:03:15', 8),
-(33, 'rerum', 1, '2022-07-04 07:35:01', '2022-07-04 09:03:15', '2022-07-04 09:03:15', 9),
-(34, 'dolorem', 0, '2022-07-04 07:35:01', '2022-07-04 09:03:28', '2022-07-04 09:03:28', 9),
-(35, 'nam', 0, '2022-07-04 07:35:01', '2022-07-04 09:03:28', '2022-07-04 09:03:28', 9),
-(36, 'corrupti', 0, '2022-07-04 07:35:01', '2022-07-04 09:03:28', '2022-07-04 09:03:28', 9),
-(37, 'temporibus', 0, '2022-07-04 07:35:02', '2022-07-04 09:03:28', '2022-07-04 09:03:28', 10),
-(38, 'repellat', 0, '2022-07-04 07:35:02', '2022-07-04 09:03:15', '2022-07-04 09:03:15', 10),
-(39, 'enim', 0, '2022-07-04 07:35:02', '2022-07-04 09:03:15', '2022-07-04 09:03:15', 10),
-(40, 'explicabo', 1, '2022-07-04 07:35:02', '2022-07-04 09:03:15', '2022-07-04 09:03:15', 10),
-(41, '1  2  3', 1, '2022-07-04 08:01:07', '2022-07-04 09:03:15', '2022-07-04 09:03:15', 11),
-(42, '2321', 0, '2022-07-04 08:05:54', '2022-07-04 09:03:15', '2022-07-04 09:03:15', 11),
 (43, 'model view controller', 1, '2022-07-04 09:05:31', '2022-07-05 09:34:25', '2022-07-05 09:34:25', 13),
 (44, 'moder view controller', 0, '2022-07-04 09:05:51', '2022-07-05 09:31:37', '2022-07-05 09:31:37', 12),
 (45, 'model visable countroller', 0, '2022-07-04 09:06:36', '2022-07-05 09:31:32', '2022-07-05 09:31:32', 12),
-(46, 'yi', 0, '2022-07-05 09:31:13', '2022-07-05 09:31:22', '2022-07-05 09:31:22', 13),
-(47, 'tuyty', 87, '2022-07-05 09:32:01', '2022-07-05 09:32:08', '2022-07-05 09:32:08', 13),
-(48, 'gj', 1, '2022-07-05 09:32:38', '2022-07-05 09:32:43', '2022-07-05 09:32:43', 13),
-(49, 'rt', 0, '2022-07-05 09:33:17', '2022-07-05 09:33:22', '2022-07-05 09:33:22', 13),
-(50, '4334', 4, '2022-07-05 09:34:02', '2022-07-05 09:34:04', '2022-07-05 09:34:04', 13),
-(51, '3242', 1, '2022-07-05 09:34:43', '2022-07-05 09:35:18', '2022-07-05 09:35:18', 13),
-(52, '23424', 0, '2022-07-05 09:34:56', '2022-07-05 09:34:58', '2022-07-05 09:34:58', 13),
-(53, 's', 3, '2022-07-05 09:36:13', '2022-07-05 09:36:21', '2022-07-05 09:36:21', 13),
-(54, 'erwr', 4, '2022-07-05 09:36:31', '2022-07-05 09:39:47', '2022-07-05 09:39:47', 13),
-(55, '4r34r', 9, '2022-07-05 09:36:38', '2022-07-05 09:36:46', '2022-07-05 09:36:46', 13),
-(56, 'erw', 1, '2022-07-05 09:39:16', '2022-07-05 09:39:35', '2022-07-05 09:39:35', 13),
-(57, 'ewrw', 0, '2022-07-05 09:39:27', '2022-07-05 09:39:31', '2022-07-05 09:39:31', 13),
-(58, 'DSS', 1, '2022-07-05 11:47:47', '2022-07-05 14:24:48', '2022-07-05 14:24:48', 13),
-(59, 'AWEAW', 1, '2022-07-05 11:47:58', '2022-07-05 11:48:03', '2022-07-05 11:48:03', 13),
-(60, 'wewae', 1, '2022-07-05 14:20:24', '2022-07-05 14:20:26', '2022-07-05 14:20:26', 13),
 (61, 'model view controller', 1, '2022-07-05 14:25:03', '2022-07-05 14:25:03', NULL, 18),
 (62, 'modern view controller', 0, '2022-07-05 14:25:25', '2022-07-05 14:25:25', NULL, 18),
 (63, 'model visable controller', 0, '2022-07-05 14:25:48', '2022-07-05 14:25:48', NULL, 18);
@@ -281,7 +192,7 @@ INSERT INTO `options` (`id`, `option_text`, `points`, `created_at`, `updated_at`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `password_resets`
+-- بنية الجدول `password_resets`
 --
 
 CREATE TABLE `password_resets` (
@@ -293,7 +204,7 @@ CREATE TABLE `password_resets` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `permissions`
+-- بنية الجدول `permissions`
 --
 
 CREATE TABLE `permissions` (
@@ -305,7 +216,7 @@ CREATE TABLE `permissions` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `permissions`
+-- إرجاع أو استيراد بيانات الجدول `permissions`
 --
 
 INSERT INTO `permissions` (`id`, `title`, `created_at`, `updated_at`, `deleted_at`) VALUES
@@ -349,7 +260,7 @@ INSERT INTO `permissions` (`id`, `title`, `created_at`, `updated_at`, `deleted_a
 -- --------------------------------------------------------
 
 --
--- Table structure for table `permission_role`
+-- بنية الجدول `permission_role`
 --
 
 CREATE TABLE `permission_role` (
@@ -358,7 +269,7 @@ CREATE TABLE `permission_role` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `permission_role`
+-- إرجاع أو استيراد بيانات الجدول `permission_role`
 --
 
 INSERT INTO `permission_role` (`role_id`, `permission_id`) VALUES
@@ -402,7 +313,7 @@ INSERT INTO `permission_role` (`role_id`, `permission_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `questions`
+-- بنية الجدول `questions`
 --
 
 CREATE TABLE `questions` (
@@ -415,25 +326,12 @@ CREATE TABLE `questions` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `questions`
+-- إرجاع أو استيراد بيانات الجدول `questions`
 --
 
 INSERT INTO `questions` (`id`, `question_text`, `created_at`, `updated_at`, `deleted_at`, `category_id`) VALUES
-(1, 'Dolores labore doloremque consectetur cumque praesentium.', '2022-07-04 07:34:57', '2022-07-04 09:03:56', '2022-07-04 09:03:56', 1),
-(2, 'Aut omnis placeat.', '2022-07-04 07:34:57', '2022-07-04 09:03:56', '2022-07-04 09:03:56', 1),
-(3, 'Quo quia quas.', '2022-07-04 07:34:57', '2022-07-04 09:03:56', '2022-07-04 09:03:56', 2),
-(4, 'Sit repudiandae porro odio.', '2022-07-04 07:34:57', '2022-07-04 09:03:51', '2022-07-04 09:03:51', 2),
-(5, 'Dolorem similique nostrum fuga maiores et.', '2022-07-04 07:34:57', '2022-07-04 09:03:51', '2022-07-04 09:03:51', 3),
-(6, 'Quasi rerum pariatur similique sed.', '2022-07-04 07:34:58', '2022-07-04 09:03:51', '2022-07-04 09:03:51', 3),
-(7, 'Molestias recusandae consequatur nam necessitatibus.', '2022-07-04 07:34:58', '2022-07-04 09:03:51', '2022-07-04 09:03:51', 4),
-(8, 'Rerum placeat ex.', '2022-07-04 07:34:58', '2022-07-04 09:03:51', '2022-07-04 09:03:51', 4),
-(9, 'Similique veniam tempore.', '2022-07-04 07:34:58', '2022-07-04 09:03:51', '2022-07-04 09:03:51', 5),
-(10, 'Soluta officia neque ut culpa.', '2022-07-04 07:34:58', '2022-07-04 09:03:51', '2022-07-04 09:03:51', 5),
-(11, 'test1', '2022-07-04 07:59:21', '2022-07-04 09:03:51', '2022-07-04 09:03:51', 2),
 (12, 'ما هي ال mvc ?', '2022-07-04 09:05:07', '2022-07-05 09:15:15', '2022-07-05 09:15:15', 28),
 (13, 'test', '2022-07-05 09:15:08', '2022-07-05 14:23:41', '2022-07-05 14:23:41', 35),
-(14, 'ee', '2022-07-05 09:38:30', '2022-07-05 14:23:36', '2022-07-05 14:23:36', 35),
-(15, 'test', '2022-07-05 09:38:59', '2022-07-05 14:22:15', '2022-07-05 14:22:15', 35),
 (16, 'ما هي ال mvc ?', '2022-07-05 14:24:03', '2022-07-05 14:24:19', '2022-07-05 14:24:19', 35),
 (17, 'ما هي ال mvc ?', '2022-07-05 14:24:03', '2022-07-05 14:24:10', '2022-07-05 14:24:10', 35),
 (18, 'ما هي ال mvc ?', '2022-07-05 14:24:36', '2022-07-05 14:24:36', NULL, 35);
@@ -441,7 +339,7 @@ INSERT INTO `questions` (`id`, `question_text`, `created_at`, `updated_at`, `del
 -- --------------------------------------------------------
 
 --
--- Table structure for table `question_result`
+-- بنية الجدول `question_result`
 --
 
 CREATE TABLE `question_result` (
@@ -454,7 +352,7 @@ CREATE TABLE `question_result` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `results`
+-- بنية الجدول `results`
 --
 
 CREATE TABLE `results` (
@@ -469,7 +367,7 @@ CREATE TABLE `results` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `roles`
+-- بنية الجدول `roles`
 --
 
 CREATE TABLE `roles` (
@@ -481,7 +379,7 @@ CREATE TABLE `roles` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `roles`
+-- إرجاع أو استيراد بيانات الجدول `roles`
 --
 
 INSERT INTO `roles` (`id`, `title`, `created_at`, `updated_at`, `deleted_at`) VALUES
@@ -491,7 +389,7 @@ INSERT INTO `roles` (`id`, `title`, `created_at`, `updated_at`, `deleted_at`) VA
 -- --------------------------------------------------------
 
 --
--- Table structure for table `role_user`
+-- بنية الجدول `role_user`
 --
 
 CREATE TABLE `role_user` (
@@ -500,7 +398,7 @@ CREATE TABLE `role_user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `role_user`
+-- إرجاع أو استيراد بيانات الجدول `role_user`
 --
 
 INSERT INTO `role_user` (`user_id`, `role_id`) VALUES
@@ -510,7 +408,7 @@ INSERT INTO `role_user` (`user_id`, `role_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- بنية الجدول `users`
 --
 
 CREATE TABLE `users` (
@@ -526,7 +424,7 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `users`
+-- إرجاع أو استيراد بيانات الجدول `users`
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `deleted_at`) VALUES
@@ -716,30 +614,30 @@ ALTER TABLE `users`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
--- Constraints for dumped tables
+-- قيود الجداول المحفوظة
 --
 
 --
--- Constraints for table `options`
+-- القيود للجدول `options`
 --
 ALTER TABLE `options`
   ADD CONSTRAINT `question_fk_773758` FOREIGN KEY (`question_id`) REFERENCES `questions` (`id`);
 
 --
--- Constraints for table `permission_role`
+-- القيود للجدول `permission_role`
 --
 ALTER TABLE `permission_role`
   ADD CONSTRAINT `permission_id_fk_773672` FOREIGN KEY (`permission_id`) REFERENCES `permissions` (`id`) ON DELETE CASCADE,
   ADD CONSTRAINT `role_id_fk_773672` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE CASCADE;
 
 --
--- Constraints for table `questions`
+-- القيود للجدول `questions`
 --
 ALTER TABLE `questions`
   ADD CONSTRAINT `category_fk_773713` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`);
 
 --
--- Constraints for table `question_result`
+-- القيود للجدول `question_result`
 --
 ALTER TABLE `question_result`
   ADD CONSTRAINT `option_id_fk_773767` FOREIGN KEY (`option_id`) REFERENCES `options` (`id`) ON DELETE CASCADE,
@@ -747,13 +645,13 @@ ALTER TABLE `question_result`
   ADD CONSTRAINT `result_id_fk_773767` FOREIGN KEY (`result_id`) REFERENCES `results` (`id`) ON DELETE CASCADE;
 
 --
--- Constraints for table `results`
+-- القيود للجدول `results`
 --
 ALTER TABLE `results`
   ADD CONSTRAINT `user_fk_773765` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`);
 
 --
--- Constraints for table `role_user`
+-- القيود للجدول `role_user`
 --
 ALTER TABLE `role_user`
   ADD CONSTRAINT `role_id_fk_773681` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE CASCADE,

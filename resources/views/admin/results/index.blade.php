@@ -35,6 +35,12 @@
                             {{ trans('cruds.result.fields.questions') }}
                         </th>
                         <th>
+                            percentage
+                        </th>
+                        <th>
+                            Result
+                        </th>
+                        <th>
                             &nbsp;
                         </th>
                     </tr>
@@ -58,6 +64,20 @@
                                 @foreach($result->questions as $key => $item)
                                     <span class="badge badge-info">{{ $item->question_text }}</span>
                                 @endforeach
+                            </td>
+                            <td>
+                                <?php $count_ques=$result->questions->count();
+                                      $res= $result->total_points;
+                                       $res_final=($res / $count_ques)*100 ;
+                                       echo $res_final."%"?>
+                            </td>
+                            <td>
+                                <?php  if ($res_final >=50){
+                                    echo '<p style="color: #2d995b"> successfuly</p>';
+                                }
+                                else{
+                                    echo '<p style="color: #ae1c17">unsuccessfuly</p>';
+                                }?>
                             </td>
                             <td>
                                 @can('result_show')

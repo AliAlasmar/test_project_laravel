@@ -1,5 +1,22 @@
 # Laravel Quiz/Test Project with PDF Results
 
+ارشادات متعلقة بالية عمل الموقع:
+اولا : ملف الداتابيز المصدر موجود داخل المجلد database باسم laravel.sql 
+ اسم الداتا بيز الموجود تسميتها ضمن ملف ال env تدعى laravel
+
+ثانيا : للدخول ل dashboard الادمن يرجى ادخال الرابط    :  http://127.0.0.1:8000/admin 
+          ثم تسجيل الدخول بالحساب التالي :
+                                                                 admin@admin.com
+                                                                   12345678 :password
+
+          للدخول ل dashboard المستخدم يرجى ادخال الرابط    :  http://127.0.0.1:8000
+
+                     -------------------------------------------------------------------------
+        المبدأ المعتمد لاضافة اسئلة : 1- ادخال صنف الاسئلة من ايقونة ال category  مثلا : برمجة
+                                                2- بعدها الدخول لايقونة ال question  وتكتابة السؤال وادارج الصنف التابع له
+                                                3- ثم الدخول لايقونة ال option وتحديد السؤال من القائمة المنسدلة ووضع الخيار مع عدد النقاط على الخيار
+                                                      مثلا نضع نقطة للخيار الصحيح و 0 للخيار الخاطى 
+ 
 Quite typical project where user goes through some set of questions - quiz, survey, assessment or similar.
 
 They get the result of how many points they've got, and then get the PDF report via email.

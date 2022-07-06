@@ -12,6 +12,7 @@
         <!-- Styles -->
         <style>
             html, body {
+                background-image: url('../asset/img/question.jpg');
                 background-color: #fff;
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
@@ -45,11 +46,16 @@
             }
 
             .title {
-                font-size: 84px;
+                font-size: 54px;
             }
 
             .title > a {
-                color: #636b6f;
+                color: #f6993f;
+            }
+
+             .title a:hover{
+                color: #38c172;
+                font-size: 70px;
             }
 
             .links > a {
@@ -67,7 +73,7 @@
             }
         </style>
     </head>
-    <body>
+    <body style="">
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
